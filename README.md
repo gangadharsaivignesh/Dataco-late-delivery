@@ -52,7 +52,6 @@ Note that this overwrites the outputs stored in the notebook.
 
 Stored outputs come from running all cells in VS Code (Python 3.14.7). Random forest figures can differ in the fourth decimal place across library versions.
 
-Run commands from the repository root. The stored notebook outputs were generated with `scripts/exec_notebook.py`; I will re-run the notebook with standard Jupyter before submitting.
 
 ## Slide-to-notebook map (deck: `deck/Late_Delivery_Final_Presentation.pdf`)
 
