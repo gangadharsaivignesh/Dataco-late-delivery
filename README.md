@@ -33,13 +33,24 @@ The CSV is not in this repository (96 MB). Download `DataCoSupplyChainDataset.cs
 
 ## How to run
 
+1. Install the packages (versions I ran, Python 3.14.7):
 ```bash
-pip install -r requirements.txt            # versions I ran, Python 3.11
-# put the CSV in data/
-python scripts/exec_notebook.py            # equivalent to nbconvert --execute, for machines without Jupyter
-# or open the notebook in Jupyter and run all cells
-python scripts/charts.py                   # rebuilds every chart in charts/ from the CSV (the whole run takes about 3 minutes)
+   pip install -r requirements.txt
 ```
+2. Put the CSV in `data/` (see "Where the data goes" above).
+3. Open `notebooks/Late_Delivery_Analysis.ipynb` in Jupyter or VS Code and run all cells.
+4. Rebuild the slide charts into `charts/`, from the repository root:
+```bash
+   python scripts/charts.py      # takes a few minutes
+```
+
+Alternative to step 3, from the repository root, for a machine without Jupyter:
+```bash
+python scripts/exec_notebook.py   # runs every cell and writes the outputs back into the notebook file
+```
+Note that this overwrites the outputs stored in the notebook.
+
+Stored outputs come from running all cells in VS Code (Python 3.14.7). Random forest figures can differ in the fourth decimal place across library versions.
 
 Run commands from the repository root. The stored notebook outputs were generated with `scripts/exec_notebook.py`; I will re-run the notebook with standard Jupyter before submitting.
 
