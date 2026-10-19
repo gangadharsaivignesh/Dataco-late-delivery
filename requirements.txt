@@ -1,0 +1,10 @@
+# NOTE: set to the versions I ran; other versions may work but were not tested.
+# Versions I actually ran (Python 3.14.7)
+pandas==3.0.5
+numpy==2.5.3
+matplotlib==3.11.2
+seaborn==0.13.2
+scipy==1.18.1
+scikit-learn==1.9.1
+# Run the notebook in Jupyter or VS Code. ipykernel is needed to run it.
+ipykernel==7.3.0
